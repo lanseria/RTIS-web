@@ -4,7 +4,6 @@
   "packageManager": "pnpm@10.8.0",
   "scripts": {
     "build": "nuxi build",
-    "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
     "prepare": "nuxi prepare",
@@ -17,26 +16,24 @@
     "@antfu/eslint-config": "catalog:dev",
     "@iconify-json/carbon": "catalog:icons",
     "@iconify-json/twemoji": "catalog:icons",
-    "@nuxt/devtools": "catalog:build",
     "@nuxt/eslint": "catalog:build",
-    "@nuxtjs/color-mode": "catalog:build",
-    "@pinia/nuxt": "catalog:build",
+    "@tresjs/cientos": "catalog:frontend",
+    "@tresjs/nuxt": "catalog:frontend",
+    "@tresjs/post-processing": "catalog:frontend",
     "@unocss/eslint-config": "catalog:build",
     "@unocss/nuxt": "catalog:build",
-    "@vite-pwa/nuxt": "catalog:build",
     "@vueuse/core": "catalog:frontend",
     "@vueuse/nuxt": "catalog:build",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "nuxt": "catalog:build",
-    "pinia": "catalog:frontend",
+    "three": "catalog:frontend",
     "typescript": "catalog:dev",
     "unocss": "catalog:build",
     "vue": "catalog:frontend",
     "vue-tsc": "catalog:dev"
   },
   "resolutions": {
-    "@nuxt/devtools": "catalog:build",
     "unplugin": "catalog:build",
     "vite": "catalog:build"
   }

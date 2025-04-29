@@ -1,20 +1,13 @@
-import { pwa } from './app/config/pwa'
 import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@tresjs/nuxt',
   ],
-
-  devtools: {
-    enabled: true,
-  },
-
+  ssr: false,
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -31,10 +24,6 @@ export default defineNuxtConfig({
         { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
       ],
     },
-  },
-
-  colorMode: {
-    classSuffix: '',
   },
 
   future: {
@@ -60,7 +49,6 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: false,
       routes: ['/'],
-      ignore: ['/hi'],
     },
   },
 
@@ -73,5 +61,4 @@ export default defineNuxtConfig({
     },
   },
 
-  pwa,
 })
