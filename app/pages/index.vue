@@ -130,7 +130,7 @@ initTiles()
       :min-distance="radius * 1.5"
       :max-distance="radius * 5"
       :min-polar-angle="MathUtils.degToRad(70)"
-      :max-polar-angle="MathUtils.degToRad(70)"
+      :max-polar-angle="MathUtils.degToRad(83)"
       :auto-rotate="false"
       :target="cameraLookAt"
     />
