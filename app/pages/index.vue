@@ -194,8 +194,7 @@ initTiles()
         :metalness="0.1"
         :roughness="0.5"
         :transparent="true"
-        :opacity="0.6"
-        :wireframe="true"
+        :opacity="0.8"
         :depth-test="false"
       />
     </TresMesh>
